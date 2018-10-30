@@ -1,0 +1,12 @@
+-------------- NAVBAR --------------
+
+Navbar exists in 2 ver. but is always transparent. Text can be light or dark color.
+
+------------ TYPOGRAPHY ------------
+
+Typography now makes a sense. Sizes and headings are recurrent with modified versions
+for BEM Methodology.
+
+------------ #COMPONENT 1 ----------
+
+Component: Heading with Gratia logo on the back.
