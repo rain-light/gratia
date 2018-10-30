@@ -28,6 +28,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
 
 html {
   font-size: 62.5%;
+  /* SPECIAL MEDIA QUERIES */
+  /* SPECIAL MEDIA QUERIES */
+  /* SPECIAL MEDIA QUERIES */
 }
 
 @media only screen and (max-width: 75em) {
@@ -129,9 +132,118 @@ body {
   background-color: #fff;
 }
 
+/* HEADER SLIDER ARROWS */
+.slider-arrow {
+  width: 7rem;
+  height: 7rem;
+  fill: #202838;
+  cursor: pointer;
+}
+
+.slider-arrow--reverse {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+/* DMP is for "Details Make Perfection", the slogan of the company */
+.dmp {
+  position: relative;
+}
+
+.dmp__image {
+  width: 50rem;
+  max-width: 60vw;
+  position: relative;
+  left: 2%;
+  z-index: 1;
+}
+
+.dmp__text {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 9rem;
+  color: #151B29;
+  text-shadow: 0 0 5rem rgba(0, 0, 0, 0.6);
+  /* SPECIAL MEDIA QUERIES */
+}
+
+@media only screen and (max-width: 41.6875em) {
+  .dmp__text {
+    font-size: 11vw;
+  }
+}
+
+.dmp__text--big {
+  font-size: 12rem;
+  /* SPECIAL MEDIA QUERIES */
+}
+
+@media only screen and (max-width: 41.6875em) {
+  .dmp__text--big {
+    font-size: 16vw;
+  }
+}
+
+.dmp__details {
+  top: -5%;
+  left: 9%;
+  /* SPECIAL MEDIA QUERIES */
+}
+
+@media only screen and (max-width: 41.6875em) {
+  .dmp__details {
+    top: -3vw;
+    left: 5.5vw;
+  }
+}
+
+.dmp__ma {
+  left: -30%;
+  top: 34%;
+  /* SPECIAL MEDIA QUERIES */
+}
+
+@media only screen and (max-width: 41.6875em) {
+  .dmp__ma {
+    left: -19vw;
+    top: 18vw;
+  }
+}
+
+.dmp__ke {
+  right: -27%;
+  top: 34%;
+  /* SPECIAL MEDIA QUERIES */
+}
+
+@media only screen and (max-width: 41.6875em) {
+  .dmp__ke {
+    right: -18vw;
+    top: 18vw;
+  }
+}
+
+.dmp__perfection {
+  bottom: -9%;
+  left: -11%;
+  /* SPECIAL MEDIA QUERIES */
+}
+
+@media only screen and (max-width: 41.6875em) {
+  .dmp__perfection {
+    bottom: -5vw;
+    left: -7vw;
+  }
+}
+
 .navbar {
   padding: 5rem 6rem;
   border-bottom: 1px solid #E6E6E6;
+  /* SPECIAL MEDIA QUERIES */
   /* Flexbox settings */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,6 +255,13 @@ body {
       -ms-flex-align: center;
           align-items: center;
   /* CHECKBOX HACK AND MOBILE MENU START */
+  /* SPECIAL MEDIA QUERIES */
+}
+
+@media only screen and (max-width: 37.5em) {
+  .navbar {
+    padding: 3rem 4rem;
+  }
 }
 
 .navbar__list {
@@ -156,6 +275,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  /* SPECIAL MEDIA QUERIES */
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -179,6 +299,7 @@ body {
 
 .navbar__hamburger {
   display: none;
+  /* SPECIAL MEDIA QUERIES */
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -268,7 +389,54 @@ body {
 }
 
 .header {
-  min-height: 100vh;
+  min-height: 80rem;
   background-color: #151B29;
+  position: relative;
+}
+
+.header__presentation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  /* SPECIAL MEDIA QUERIES */
+}
+
+@media only screen and (max-width: 41.6875em) {
+  .header__presentation {
+    top: 50vw;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .header__presentation {
+    top: 60vw;
+  }
+}
+
+.header__navigation {
+  position: absolute;
+  width: 100%;
+  padding: 0 6rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* SPECIAL MEDIA QUERIES */
+}
+
+@media only screen and (max-width: 37.5em) {
+  .header__navigation {
+    padding: 0 4rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

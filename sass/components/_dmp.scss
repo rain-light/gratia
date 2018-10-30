@@ -1,0 +1,74 @@
+/* DMP is for "Details Make Perfection", the slogan of the company */
+
+.dmp {
+    position: relative;
+    
+    &__image {
+        width: 50rem;
+        max-width: 60vw;
+        position: relative;
+        left: 2%;
+        z-index: 1;
+    }
+
+    &__text {
+        user-select: none;
+        position: absolute;
+        text-transform: uppercase;
+        font-size: 9rem;
+        color: $color-primary;
+        text-shadow: 0 0 5rem rgba(0, 0, 0, .6);
+
+        @include respond(dmp) {
+            font-size: 11vw;
+        }
+
+        &--big {
+            font-size: 12rem;
+
+            @include respond(dmp) {
+                font-size: 16vw;
+            }
+        }
+    }
+
+    &__details {
+        top: -5%;
+        left: 9%;
+
+        @include respond(dmp) {
+            top: -3vw;
+            left: 5.5vw;
+        }
+    }
+
+    &__ma {
+        left: -30%;
+        top: 34%;
+
+        @include respond(dmp) {
+            left: -19vw;
+            top: 18vw;
+        }
+    }
+
+    &__ke {
+        right: -27%;
+        top: 34%;
+
+        @include respond(dmp) {
+            right: -18vw;
+            top: 18vw;
+        }
+    }
+
+    &__perfection {
+        bottom: -9%;
+        left: -11%;
+
+        @include respond(dmp) {
+            bottom: -5vw;
+            left: -7vw;
+        }
+    }
+}

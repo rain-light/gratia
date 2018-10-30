@@ -66,3 +66,16 @@
         }
     }
 }
+
+/* HEADER SLIDER ARROWS */
+
+.slider-arrow {
+    width: 7rem;
+    height: 7rem;
+    fill: #202838;
+    cursor: pointer;
+
+    &--reverse {
+        transform: rotate(180deg);
+    }
+}

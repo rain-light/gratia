@@ -2,14 +2,14 @@
     padding: 5rem 6rem;
     border-bottom: 1px solid #E6E6E6;
 
+    @include respond(phone) {
+        padding: 3rem 4rem;
+    }
+
     /* Flexbox settings */
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    &__logo {
-
-    }
 
     &__list {
         flex: 0 0 40rem;
