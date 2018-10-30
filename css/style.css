@@ -173,7 +173,7 @@ body {
 
 @media only screen and (max-width: 41.6875em) {
   .dmp__text {
-    font-size: 11vw;
+    font-size: 9vw;
   }
 }
 
@@ -184,7 +184,7 @@ body {
 
 @media only screen and (max-width: 41.6875em) {
   .dmp__text--big {
-    font-size: 16vw;
+    font-size: 11vw;
   }
 }
 
@@ -196,8 +196,8 @@ body {
 
 @media only screen and (max-width: 41.6875em) {
   .dmp__details {
-    top: -3vw;
-    left: 5.5vw;
+    top: -2vw;
+    left: 10vw;
   }
 }
 
@@ -209,8 +209,8 @@ body {
 
 @media only screen and (max-width: 41.6875em) {
   .dmp__ma {
-    left: -19vw;
-    top: 18vw;
+    left: -9vw;
+    top: 20vw;
   }
 }
 
@@ -222,8 +222,8 @@ body {
 
 @media only screen and (max-width: 41.6875em) {
   .dmp__ke {
-    right: -18vw;
-    top: 18vw;
+    right: -8vw;
+    top: 20vw;
   }
 }
 
@@ -235,8 +235,8 @@ body {
 
 @media only screen and (max-width: 41.6875em) {
   .dmp__perfection {
-    bottom: -5vw;
-    left: -7vw;
+    bottom: -3vw;
+    left: -1vw;
   }
 }
 
@@ -333,6 +333,7 @@ body {
 @media only screen and (max-width: 37.5em) {
   .navbar__checkbox:checked + .navbar {
     position: fixed;
+    z-index: 100;
     width: 100vw;
     height: 100vh;
     background-color: #fff;
@@ -434,9 +435,16 @@ body {
   /* SPECIAL MEDIA QUERIES */
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 41.6875em) {
   .header__navigation {
-    padding: 0 4rem;
+    padding: 0 1rem;
+    top: 50vw;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .header__navigation {
+    top: 60vw;
   }
 }
 /*# sourceMappingURL=style.css.map */

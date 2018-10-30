@@ -20,14 +20,14 @@
         text-shadow: 0 0 5rem rgba(0, 0, 0, .6);
 
         @include respond(dmp) {
-            font-size: 11vw;
+            font-size: 9vw;
         }
 
         &--big {
             font-size: 12rem;
 
             @include respond(dmp) {
-                font-size: 16vw;
+                font-size: 11vw;
             }
         }
     }
@@ -37,8 +37,8 @@
         left: 9%;
 
         @include respond(dmp) {
-            top: -3vw;
-            left: 5.5vw;
+            top: -2vw;
+            left: 10vw;
         }
     }
 
@@ -47,8 +47,8 @@
         top: 34%;
 
         @include respond(dmp) {
-            left: -19vw;
-            top: 18vw;
+            left: -9vw;
+            top: 20vw;
         }
     }
 
@@ -57,8 +57,8 @@
         top: 34%;
 
         @include respond(dmp) {
-            right: -18vw;
-            top: 18vw;
+            right: -8vw;
+            top: 20vw;
         }
     }
 
@@ -67,8 +67,8 @@
         left: -11%;
 
         @include respond(dmp) {
-            bottom: -5vw;
-            left: -7vw;
+            bottom: -3vw;
+            left: -1vw;
         }
     }
 }
