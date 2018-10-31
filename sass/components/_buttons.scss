@@ -1,0 +1,13 @@
+.btn,
+.btn:link,
+.btn:visited {
+    display: block;
+    min-width: 19.9rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $color-secondary;
+    font-size: 1.4rem;
+    border: 1px solid #263045;
+    padding: 1.8rem 4.5rem;
+}

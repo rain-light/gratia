@@ -154,6 +154,58 @@ body {
   }
 }
 
+/* HEADER SMALL BOTTOM TEXT */
+.header-perfection__text {
+  font-family: 'Crimson Text', serif;
+  font-style: italic;
+  color: #485471;
+}
+
+.header-perfection__arrow {
+  width: 1px;
+  height: 35px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  background-color: #485471;
+}
+
+.header-perfection__arrow::before, .header-perfection__arrow::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: inherit;
+  position: absolute;
+  bottom: 0;
+  left: 49.5%;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
+.header-perfection__arrow::before {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.header-perfection__arrow::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: block;
+  min-width: 19.9rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #D89B64;
+  font-size: 1.4rem;
+  border: 1px solid #263045;
+  padding: 1.8rem 4.5rem;
+}
+
 /* DMP is for "Details Make Perfection", the slogan of the company */
 .dmp {
   position: relative;
@@ -170,7 +222,6 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .dmp__image {
-    width: 60vw;
     left: 4%;
   }
 }
@@ -195,7 +246,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 41.6875em) {
   .dmp__text {
     font-size: 9vw;
   }
@@ -206,7 +257,7 @@ body {
   /* SPECIAL MEDIA QUERIES */
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 41.6875em) {
   .dmp__text--big {
     font-size: 11vw;
   }
@@ -218,7 +269,7 @@ body {
   /* SPECIAL MEDIA QUERIES */
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 41.6875em) {
   .dmp__details {
     top: -2vw;
     left: 11.5vw;
@@ -231,7 +282,7 @@ body {
   /* SPECIAL MEDIA QUERIES */
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 41.6875em) {
   .dmp__ma {
     left: -12vw;
     top: 20vw;
@@ -244,7 +295,7 @@ body {
   /* SPECIAL MEDIA QUERIES */
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 41.6875em) {
   .dmp__ke {
     right: -11vw;
     top: 20vw;
@@ -257,7 +308,7 @@ body {
   /* SPECIAL MEDIA QUERIES */
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 41.6875em) {
   .dmp__perfection {
     bottom: -3vw;
     left: 0;
@@ -414,9 +465,16 @@ body {
 }
 
 .header {
-  min-height: 80rem;
+  height: 80rem;
   background-color: #151B29;
   position: relative;
+  /* SPECIAL MEDIA QUERIES */
+}
+
+@media only screen and (max-width: 41.6875em) {
+  .header {
+    height: calc((0.4 * 100vw) + 373.2px);
+  }
 }
 
 .header__presentation {
@@ -430,13 +488,7 @@ body {
 
 @media only screen and (max-width: 41.6875em) {
   .header__presentation {
-    top: 50vw;
-  }
-}
-
-@media only screen and (max-width: 25em) {
-  .header__presentation {
-    top: 60vw;
+    top: 40%;
   }
 }
 
@@ -460,7 +512,7 @@ body {
   /* SPECIAL MEDIA QUERIES */
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .header__navigation {
     padding: 0 1rem;
     top: 51%;
@@ -469,14 +521,59 @@ body {
 
 @media only screen and (max-width: 41.6875em) {
   .header__navigation {
-    top: 50vw;
+    top: 40%;
   }
 }
 
 @media only screen and (max-width: 25em) {
   .header__navigation {
-    top: 60vw;
     padding: 0 .3rem;
   }
+}
+
+.header__button {
+  position: absolute;
+  bottom: 5.15rem;
+  right: 6rem;
+  /* SPECIAL MEDIA QUERIES */
+  /* SPECIAL MEDIA QUERIES */
+  /* SPECIAL MEDIA QUERIES */
+  /* SPECIAL MEDIA QUERIES */
+}
+
+@media only screen and (min-width: 112.5em) {
+  .header__button {
+    bottom: 4.6rem;
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .header__button {
+    bottom: 5.4rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .header__button {
+    bottom: 5.8rem;
+  }
+}
+
+@media only screen and (max-width: 41.6875em) {
+  .header__button {
+    left: 50%;
+    right: auto;
+    bottom: 18%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
+.header__bottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=style.css.map */

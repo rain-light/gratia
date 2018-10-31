@@ -1,7 +1,11 @@
 .header {
-    min-height: 80rem; //TEST
+    height: 80rem; //TEST
     background-color: $color-primary;
     position: relative;
+
+    @include respond(dmp) {
+        height: calc((0.4 * 100vw) + 373.2px);
+    }
 
     &__presentation {
         position: absolute;
@@ -10,11 +14,7 @@
         transform: translate(-50%, -50%);
 
         @include respond(dmp) {
-            top: 50vw;
-        }
-
-        @media only screen and (max-width: 25em) {
-            top: 60vw;
+            top: 40%;
         }
     }
 
@@ -29,18 +29,49 @@
         justify-content: space-between;
         align-items: center;
 
-        @include respond(tab-port) {
+        @include respond(tab-land) {
             padding: 0 1rem;
             top: 51%;
         }
         
         @include respond(dmp) {
-            top: 50vw;
+            top: 40%;
         }
 
         @media only screen and (max-width: 25em) {
-            top: 60vw;
             padding: 0 .3rem;
         }
+    }
+
+    &__button {
+        position: absolute;
+        bottom: 5.15rem;
+        right: 6rem;
+
+        @include respond(big-desktop) {
+            bottom: 4.6rem;
+        }
+
+        @include respond(tab-land) {
+            bottom: 5.4rem;
+        }
+
+        @include respond(tab-port) {
+            bottom: 5.8rem;
+        }
+
+        @include respond(dmp) {
+            left: 50%;
+            right: auto;
+            bottom: 18%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__bottom {
+        position: absolute;
+        bottom: 2rem;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
