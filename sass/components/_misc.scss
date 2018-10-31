@@ -78,4 +78,10 @@
     &--reverse {
         transform: rotate(180deg);
     }
+
+    @include respond(tab-port) {
+        fill: lighten($color: #202838, $amount: 15);
+        width: 7vw;
+        height: 7vw;
+    }
 }

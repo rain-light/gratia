@@ -9,6 +9,10 @@
         position: relative;
         left: 2%;
         z-index: 1;
+
+        @include respond(tab-port) {
+            width: 60vw;
+        }
     }
 
     &__text {
@@ -18,15 +22,19 @@
         font-size: 9rem;
         color: $color-primary;
         text-shadow: 0 0 5rem rgba(0, 0, 0, .6);
+        
+        @include respond(tab-port) {
+            color: lighten($color-primary, $amount: 5);
+        }
 
-        @include respond(dmp) {
+        @include respond(tab-port) {
             font-size: 9vw;
         }
 
         &--big {
             font-size: 12rem;
 
-            @include respond(dmp) {
+            @include respond(tab-port) {
                 font-size: 11vw;
             }
         }
@@ -36,7 +44,7 @@
         top: -5%;
         left: 9%;
 
-        @include respond(dmp) {
+        @include respond(tab-port) {
             top: -2vw;
             left: 10vw;
         }
@@ -46,7 +54,7 @@
         left: -30%;
         top: 34%;
 
-        @include respond(dmp) {
+        @include respond(tab-port) {
             left: -9vw;
             top: 20vw;
         }
@@ -56,7 +64,7 @@
         right: -27%;
         top: 34%;
 
-        @include respond(dmp) {
+        @include respond(tab-port) {
             right: -8vw;
             top: 20vw;
         }
@@ -66,7 +74,7 @@
         bottom: -9%;
         left: -11%;
 
-        @include respond(dmp) {
+        @include respond(tab-port) {
             bottom: -3vw;
             left: -1vw;
         }
