@@ -171,6 +171,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .dmp__image {
     width: 60vw;
+    left: 4%;
   }
 }
 
@@ -220,7 +221,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .dmp__details {
     top: -2vw;
-    left: 10vw;
+    left: 11.5vw;
   }
 }
 
@@ -232,7 +233,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .dmp__ma {
-    left: -9vw;
+    left: -12vw;
     top: 20vw;
   }
 }
@@ -245,7 +246,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .dmp__ke {
-    right: -8vw;
+    right: -11vw;
     top: 20vw;
   }
 }
@@ -259,7 +260,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .dmp__perfection {
     bottom: -3vw;
-    left: -1vw;
+    left: 0;
   }
 }
 
@@ -462,6 +463,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .header__navigation {
     padding: 0 1rem;
+    top: 51%;
   }
 }
 
