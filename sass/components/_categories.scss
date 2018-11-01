@@ -1,0 +1,88 @@
+.categories {
+
+    /* GRID SETTINGS START*/
+    display: grid;
+    grid-template-columns: 35fr 25fr 35fr;
+    grid-template-rows: 22.129vw;
+    grid-column-gap: 2.7vw;
+
+    @media only screen and (max-width: 50em) {
+        justify-content: center;
+        grid-template-columns: calc((0.25526315789474 * 100vw) + 198.02631578947px);
+        grid-template-rows: calc((0.25526315789474 * 100vw) + 98.02631578947px)
+                            calc((0.25526315789474 * 100vw) + 198.02631578947px)
+                            calc((0.25526315789474 * 100vw) + 98.02631578947px);
+        grid-row-gap: calc((0.02 * 100vw) + 12rem);
+    }
+
+    /* GRID SETTINGS END */
+
+    &__category {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-size: cover;
+
+        @include flex-center;
+        
+        &::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background-color: rgba($color-primary, .75);
+        }
+
+        &--1 {
+            background-image: url(/img/desserts.jpg);
+        }
+
+        &--2 {
+            background-image: url(/img/breakfast.jpg);
+        }
+    }
+
+    &__category-link,
+    &__category-link:link,
+    &__category-link:visited {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    &__category-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+    }
+
+    &__in-evidence {
+        background-color: cyan;
+        height: 140%;
+        align-self: center;
+
+        background-image: url(/img/smoothies.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 0 5rem rgba(0, 0, 0, .1);
+    }
+
+    &__in-evidence-link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+        color: inherit;
+
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__in-evidence-content {
+        width: 100%;
+        padding: 0 2rem;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+}
