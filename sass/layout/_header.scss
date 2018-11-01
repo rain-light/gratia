@@ -16,6 +16,10 @@
         @include respond(dmp) {
             top: 40%;
         }
+
+        @include respond(dmp-land) {
+            top: 40%;
+        }
     }
 
     &__navigation {
@@ -35,6 +39,10 @@
         }
         
         @include respond(dmp) {
+            top: 40%;
+        }
+
+        @include respond(dmp-land) {
             top: 40%;
         }
 
@@ -72,6 +80,13 @@
         }
 
         @include respond(dmp) {
+            left: 50%;
+            right: auto;
+            bottom: 18%;
+            transform: translateX(-50%);
+        }
+
+        @include respond(dmp-land) {
             left: 50%;
             right: auto;
             bottom: 18%;

@@ -5,10 +5,17 @@
     
     &__image {
         width: 50rem;
-        max-width: 60vw;
         position: relative;
         left: 2%;
         z-index: 1;
+
+        @include respond(dmp) {
+            width: 60vw;
+        }
+
+        @include respond(dmp-land) {
+            width: 45vw;
+        }
 
         @include respond(tab-port) {
             left: 4%;
@@ -31,11 +38,19 @@
             font-size: 9vw;
         }
 
+        @include respond(dmp-land) {
+            font-size: 8vw;
+        }
+
         &--big {
             font-size: 12rem;
 
             @include respond(dmp) {
                 font-size: 11vw;
+            }
+
+            @include respond(dmp-land) {
+                font-size: 10vw;
             }
         }
     }
@@ -48,6 +63,11 @@
             top: -2vw;
             left: 11.5vw;
         }
+
+        @include respond(dmp-land) {
+            top: -2.5vw;
+            left: 5.5vw;
+        }
     }
 
     &__ma {
@@ -57,6 +77,11 @@
         @include respond(dmp) {
             left: -12vw;
             top: 20vw;
+        }
+
+        @include respond(dmp-land) {
+            left: -13vw;
+            top: 14vw;
         }
     }
 
@@ -68,6 +93,11 @@
             right: -11vw;
             top: 20vw;
         }
+
+        @include respond(dmp-land) {
+            right: -12vw;
+            top: 14vw;
+        }
     }
 
     &__perfection {
@@ -77,6 +107,11 @@
         @include respond(dmp) {
             bottom: -3vw;
             left: 0;
+        }
+
+        @include respond(dmp-land) {
+            bottom: -4vw;
+            left: -4.5vw;
         }
     }
 }

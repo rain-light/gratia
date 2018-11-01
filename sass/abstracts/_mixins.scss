@@ -33,7 +33,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
     /* SPECIAL MEDIA QUERIES */
 
     @if $breakpoint == dmp {
-        @media only screen and (max-width: 41.6875em) { @content }; //500
+        @media only screen and (max-width: 41.6875em) and (max-aspect-ratio: 71/70) { @content }; //500
+    }
+
+    @if $breakpoint == dmp-land {
+        @media only screen and (max-width: 50em) and (min-aspect-ratio: 71/70) { @content }; //500
     }
 }
 
