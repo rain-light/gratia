@@ -43,6 +43,17 @@
         }
     }
 
+    &__slider {
+        position: absolute;
+        left: 6rem;
+        bottom: 6rem;
+
+        @media only screen and (max-width: 25em) {
+            left: 3rem;
+            bottom: 3rem;
+        }
+    }
+
     &__button {
         position: absolute;
         bottom: 5.15rem;
