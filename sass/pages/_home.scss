@@ -1,0 +1,48 @@
+.home {
+
+    &__categories {
+        padding-bottom: 18rem;
+        position: relative;
+
+        .button-underline {
+            position: absolute;
+            left: 50%;
+            bottom: 4rem;
+            transform: translateX(-50%);
+        }
+    }
+
+    &__details {
+        height: 56.2rem;
+        background-image: url(/img/details-photo.jpg);
+        background-position: center;
+        background-size: cover;
+
+        @include flex-center;
+
+        &-container {
+            background-color: #fff;
+            flex: 0 0 60rem;
+            max-width: 80vw;
+            height: 70%;
+            padding: 3rem;
+
+            @include flex-center;
+        }
+
+        &-content {
+            width: 100%;
+            height: 100%;
+            padding: 0 1.9rem;
+            border: 1px solid #E2E3E6;
+            text-align: center;
+
+            @include flex-center;
+            flex-direction: column;
+
+            h4 {
+                margin: 2.5rem 0;
+            }
+        }
+    }
+}

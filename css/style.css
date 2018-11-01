@@ -257,15 +257,33 @@ body {
 .btn,
 .btn:link,
 .btn:visited {
-  display: block;
-  min-width: 19.9rem;
-  text-align: center;
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   color: #D89B64;
   font-size: 1.4rem;
   border: 1px solid #263045;
   padding: 1.8rem 4.5rem;
+}
+
+.btn--light,
+.btn--light:link,
+.btn--light:visited {
+  border-color: #DCDDDF;
+}
+
+.button-underline,
+.button-underline:link,
+.button-underline:visited {
+  display: block;
+  min-width: 20rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #D89B64;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #D89B64;
 }
 
 /* DMP is for "Details Make Perfection", the slogan of the company */
@@ -884,5 +902,78 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.home__categories {
+  padding-bottom: 18rem;
+  position: relative;
+}
+
+.home__categories .button-underline {
+  position: absolute;
+  left: 50%;
+  bottom: 4rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.home__details {
+  height: 56.2rem;
+  background-image: url(/img/details-photo.jpg);
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__details-container {
+  background-color: #fff;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60rem;
+          flex: 0 0 60rem;
+  max-width: 80vw;
+  height: 70%;
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__details-content {
+  width: 100%;
+  height: 100%;
+  padding: 0 1.9rem;
+  border: 1px solid #E2E3E6;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home__details-content h4 {
+  margin: 2.5rem 0;
 }
 /*# sourceMappingURL=style.css.map */
