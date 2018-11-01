@@ -640,11 +640,10 @@ body {
   -ms-grid-rows: 22.129vw;
       grid-template-rows: 22.129vw;
   grid-column-gap: 2.7vw;
-  /* SPECIAL MEDIA QUERIES */
   /* GRID SETTINGS END */
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 50em) {
   .categories {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
