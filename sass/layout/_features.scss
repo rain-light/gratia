@@ -1,0 +1,69 @@
+.features {
+
+    /* GRID SETTINGS START */
+    display: grid;
+    grid-template-columns: 6fr 7fr 6fr;
+    grid-template-rows: 15vw;
+    grid-column-gap: 1.8vw;
+
+    @media only screen and (max-width: 50em) {
+        justify-content: center;
+         grid-template-columns: calc((0.25526315789474 * 100vw) + 198.02631578947px);
+         grid-row-gap: 10rem;
+         grid-template-rows: calc((0.25526315789474 * 100vw) + 38.02631578947px)
+                            calc((0.25526315789474 * 100vw) + 88.02631578947px)
+                            calc((0.25526315789474 * 100vw) + 38.02631578947px);
+    }
+
+    /* GRID SETTINGS END */
+
+    div {
+        padding: 2rem;
+    }
+
+    &__feature {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #F8F8F8;
+
+        @include flex-center;
+    }
+
+    &__feature-content,
+    &__in-evidence-content {
+        position: relative;
+        z-index: 1;
+        text-align: center;
+
+        *:first-child {
+            margin-bottom: 2.5rem;
+        }
+    }
+
+    &__feature-bg,
+    &__in-evidence-bg {
+        user-select: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #fff;
+        font-family: 'selimaregular', serif;
+        font-size: 20rem;
+    }
+
+    &__in-evidence-bg {
+        color: lighten($color-primary, 3);
+    }
+
+    &__in-evidence {
+        position: relative;
+        width: 100%;
+        height: 140%;
+        align-self: center;
+        background-color: #131925;
+
+        @include flex-center;
+    }
+}

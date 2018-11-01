@@ -7,6 +7,14 @@
     }
 }
 
+.heading-3 {
+    text-transform: uppercase;
+
+    &--accent {
+        color: $color-secondary;
+    }
+}
+
 .heading-italic {
     font-family: 'Crimson Text', serif;
     color: #8B909D;
