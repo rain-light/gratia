@@ -6,7 +6,7 @@
     grid-template-rows: 22.129vw;
     grid-column-gap: 2.7vw;
 
-    @media only screen and (max-width: 50em) {
+    @include respond(phone) {
         justify-content: center;
         grid-template-columns: calc((0.25526315789474 * 100vw) + 198.02631578947px);
         grid-template-rows: calc((0.25526315789474 * 100vw) + 98.02631578947px)
