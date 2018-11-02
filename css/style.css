@@ -262,6 +262,10 @@ body {
   background-color: #D89B64;
 }
 
+.separator--gray {
+  background-color: #E7E8E9;
+}
+
 .btn,
 .btn:link,
 .btn:visited {
@@ -519,6 +523,10 @@ body {
   color: #D89B64;
 }
 
+.navbar__link--active, .navbar__link--active:link, .navbar__link--active:visited {
+  color: #D89B64;
+}
+
 .navbar__hamburger {
   display: none;
   /* SPECIAL MEDIA QUERIES */
@@ -758,6 +766,72 @@ body {
   width: 100%;
   padding: 0 2rem;
   margin-bottom: 10%;
+  text-align: center;
+}
+
+.menu-card {
+  width: 45rem;
+  max-width: 80vw;
+  height: 50rem;
+  -webkit-box-shadow: 0 0 10rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 10rem rgba(0, 0, 0, 0.15);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-card__img {
+  width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu-card__img--1 {
+  background-image: url(/img/main-dishes.jpg);
+}
+
+.menu-card__img--2 {
+  background-image: url(/img/soups.jpg);
+}
+
+.menu-card__img--3 {
+  background-image: url(/img/hamburgers.jpg);
+}
+
+.menu-card__img--4 {
+  background-image: url(/img/desserts-menu.jpg);
+}
+
+.menu-card__img--5 {
+  background-image: url(/img/barbecue.jpg);
+}
+
+.menu-card__img--6 {
+  background-image: url(/img/salads.jpg);
+}
+
+@media only screen and (min-width: 28.125em) {
+  .menu-card__img--6 {
+    background-size: 102%;
+  }
+}
+
+.menu-card__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 5rem 2rem;
   text-align: center;
 }
 
@@ -1004,9 +1078,25 @@ body {
           align-items: center;
 }
 
+.menu {
+  padding: 0 6rem;
+  /* GRID SETTINGS START */
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(45rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+  grid-column-gap: 3rem;
+  grid-row-gap: 5rem;
+  /* GRID SETTINGS END */
+}
+
 .footer {
   position: relative;
-  padding-bottom: 15rem;
+  padding: 15rem 0;
 }
 
 .footer__line {
@@ -1072,6 +1162,12 @@ body {
   height: 2.5rem;
   fill: #E6E6E6;
   cursor: pointer;
+  -webkit-transition: fill .3s;
+  transition: fill .3s;
+}
+
+.footer__social-icon:hover {
+  fill: #cdcdcd;
 }
 
 .footer__social-icon:not(:first-child), .footer__social-icon:not(:last-child) {
@@ -1149,9 +1245,5 @@ body {
 
 .home__details-content h4 {
   margin: 2.5rem 0;
-}
-
-.home__features {
-  padding-bottom: 15rem;
 }
 /*# sourceMappingURL=style.css.map */

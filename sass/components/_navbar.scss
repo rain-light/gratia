@@ -35,6 +35,12 @@
             color: $color-secondary;
         }
     }
+
+    &__link--active,
+    &__link--active:link,
+    &__link--active:visited {
+        color: $color-secondary;
+    }
     
     &__hamburger {
         display: none;

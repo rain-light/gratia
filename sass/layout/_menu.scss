@@ -1,0 +1,13 @@
+.menu {
+    padding: 0 6rem;
+
+    /* GRID SETTINGS START */
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 5rem;
+
+    /* GRID SETTINGS END */
+}
