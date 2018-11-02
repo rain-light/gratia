@@ -1,0 +1,8 @@
+.book {
+    @include flex-center;
+
+    &__form {
+        background-color: cyan;
+        width: 100rem;
+    }
+}
