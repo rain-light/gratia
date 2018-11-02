@@ -1,0 +1,107 @@
+.meal {
+    width: 100rem;
+    height: 60rem;
+    box-shadow: 0 0 15rem rgba(0, 0, 0, .1);
+
+    display: flex;
+
+    @media only screen and (max-width: 53.125em) {
+        width: 80%;
+        height: 90rem;
+        flex-direction: column;
+    }
+
+    @media only screen and (max-width: 17.75em) {
+        height: 116rem;
+    }
+
+    &__img {
+        flex: 0 0 50%;
+        background-image: url(/img/meal-small.jpg);
+        background-size: 120%;
+        background-position: 20% bottom;
+
+        @include respond(res-bg) {
+            background-image: url(/img/meal.jpg);
+        }
+
+        @media only screen and (max-width: 53.125em) {
+            flex: 0 0 40%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        @media only screen and (max-width: 17.75em) {
+            flex: 0 0 30%;
+        }
+    }
+
+    &__content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__header {
+        flex: 0 0 40%;
+        text-align: center;
+        @include flex-center;
+
+        @media only screen and (max-width: 28.125em) {
+            padding: 0 2rem;
+        }
+    }
+
+    &__ingredients-box {
+        flex: 0 0 30%;
+        border-top: 1px solid #E7E8E9;
+        border-bottom: 1px solid #E7E8E9;
+        padding: 5rem 3rem;
+
+        display: flex;
+        align-items: center;
+
+        @media only screen and (max-width: 28.125em) {
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 3rem 5rem;
+        }
+    }
+
+    &__ingredients {
+        flex-basis: 51%;
+        font-size: 1.2rem;
+        color: #8B909D;
+        line-height: 1.9;
+
+        @media only screen and (max-width: 53.125em) {
+            flex: 0 1 auto;
+        }
+
+        @media only screen and (max-width: 28.125em) {
+            margin-top: 1rem;
+        }
+
+        @media only screen and(min-width: 28.125em) {
+            margin-left: 5rem;
+        }
+    }
+
+    &__price-box {
+        flex: 0 0 30%;
+        @include flex-center;
+    }
+
+    &__price-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__price {
+        font-size: 5rem;
+        font-weight: 700;
+        color: #829C2C;
+        margin-bottom: 1rem;
+    }
+}

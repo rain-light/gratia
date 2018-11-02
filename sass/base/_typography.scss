@@ -5,6 +5,10 @@
     &--accent {
         color: $color-secondary;
     }
+
+    &--lowercase {
+        text-transform: none;
+    }
 }
 
 .heading-3 {

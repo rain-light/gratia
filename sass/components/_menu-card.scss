@@ -3,7 +3,6 @@
     max-width: 80vw;
     height: 50rem;
     box-shadow: 0 0 10rem rgba(0, 0, 0, .15);
-    cursor: pointer;
 
     display: flex;
     flex-direction: column;
@@ -70,5 +69,12 @@
         flex: 1;
         padding: 5rem 2rem;
         text-align: center;
+    }
+
+    &__link,
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: inherit;
     }
 }
