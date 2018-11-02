@@ -29,8 +29,11 @@ ORDER: Base + typography > general layout + grid > page layout > components
 html {
   font-size: 62.5%;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 75em) {
@@ -166,6 +169,7 @@ body {
   fill: #202838;
   cursor: pointer;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 .slider-arrow--reverse {
@@ -309,8 +313,11 @@ body {
   left: 2%;
   z-index: 1;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 41.6875em) and (max-aspect-ratio: 71 / 70) {
@@ -342,8 +349,11 @@ body {
   color: #151B29;
   text-shadow: 0 0 5rem rgba(0, 0, 0, 0.6);
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -367,7 +377,9 @@ body {
 .dmp__text--big {
   font-size: 12rem;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 41.6875em) and (max-aspect-ratio: 71 / 70) {
@@ -386,7 +398,9 @@ body {
   top: -5%;
   left: 9%;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 41.6875em) and (max-aspect-ratio: 71 / 70) {
@@ -407,7 +421,9 @@ body {
   left: -30%;
   top: 34%;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 41.6875em) and (max-aspect-ratio: 71 / 70) {
@@ -428,7 +444,9 @@ body {
   right: -27%;
   top: 34%;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 41.6875em) and (max-aspect-ratio: 71 / 70) {
@@ -449,7 +467,9 @@ body {
   bottom: -9%;
   left: -11%;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 41.6875em) and (max-aspect-ratio: 71 / 70) {
@@ -470,6 +490,7 @@ body {
   padding: 5rem 6rem;
   border-bottom: 1px solid #E6E6E6;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* Flexbox settings */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -482,6 +503,7 @@ body {
           align-items: center;
   /* CHECKBOX HACK AND MOBILE MENU START */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -502,6 +524,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -530,6 +553,7 @@ body {
 .navbar__hamburger {
   display: none;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -775,6 +799,7 @@ body {
   height: 50rem;
   -webkit-box-shadow: 0 0 10rem rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 10rem rgba(0, 0, 0, 0.15);
+  cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -798,23 +823,63 @@ body {
 }
 
 .menu-card__img--1 {
-  background-image: url(/img/main-dishes.jpg);
+  background-image: url(/img/main-dishes-small.jpg);
+  /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  .menu-card__img--1 {
+    background-image: url(/img/main-dishes.jpg);
+  }
 }
 
 .menu-card__img--2 {
-  background-image: url(/img/soups.jpg);
+  background-image: url(/img/soups-small.jpg);
+  /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  .menu-card__img--2 {
+    background-image: url(/img/soups-normal.jpg);
+  }
 }
 
 .menu-card__img--3 {
-  background-image: url(/img/hamburgers.jpg);
+  background-image: url(/img/hamburgers-small.jpg);
+  /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  .menu-card__img--3 {
+    background-image: url(/img/hamburgers.jpg);
+  }
 }
 
 .menu-card__img--4 {
-  background-image: url(/img/desserts-menu.jpg);
+  background-image: url(/img/desserts-menu-small.jpg);
+  /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  .menu-card__img--4 {
+    background-image: url(/img/desserts-menu.jpg);
+  }
 }
 
 .menu-card__img--5 {
-  background-image: url(/img/barbecue.jpg);
+  background-image: url(/img/barbecue-small.jpg);
+  /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  .menu-card__img--5 {
+    background-image: url(/img/barbecue.jpg);
+  }
 }
 
 .menu-card__img--6 {
@@ -840,6 +905,7 @@ body {
   background-color: #151B29;
   position: relative;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 41.6875em) and (max-aspect-ratio: 71 / 70) {
@@ -855,7 +921,9 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 41.6875em) and (max-aspect-ratio: 71 / 70) {
@@ -887,8 +955,11 @@ body {
       -ms-flex-align: center;
           align-items: center;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 75em) {
@@ -934,10 +1005,15 @@ body {
   bottom: 5.15rem;
   right: 6rem;
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (min-width: 112.5em) {

@@ -39,6 +39,13 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @if $breakpoint == dmp-land {
         @media only screen and (max-width: 50em) and (min-aspect-ratio: 71/70) { @content }; //500
     }
+
+    /* Responsive images loader */
+
+    @if $breakpoint == res-bg {
+        @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+        (min-width: 125em) { @content };
+    }
 }
 
 /* Recurrent flex centering things. */

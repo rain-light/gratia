@@ -3,6 +3,7 @@
     max-width: 80vw;
     height: 50rem;
     box-shadow: 0 0 10rem rgba(0, 0, 0, .15);
+    cursor: pointer;
 
     display: flex;
     flex-direction: column;
@@ -17,23 +18,43 @@
         background-repeat: no-repeat;
 
         &--1 {
-            background-image: url(/img/main-dishes.jpg);
+            background-image: url(/img/main-dishes-small.jpg);
+
+            @include respond(res-bg) {
+                background-image: url(/img/main-dishes.jpg);
+            }
         }
 
         &--2 {
-            background-image: url(/img/soups.jpg);
+            background-image: url(/img/soups-small.jpg);
+
+            @include respond(res-bg) {
+                background-image: url(/img/soups-normal.jpg);
+            }
         }
 
         &--3 {
-            background-image: url(/img/hamburgers.jpg);
+            background-image: url(/img/hamburgers-small.jpg);
+
+            @include respond(res-bg) {
+                background-image: url(/img/hamburgers.jpg);
+            }
         }
 
         &--4 {
-            background-image: url(/img/desserts-menu.jpg);
+            background-image: url(/img/desserts-menu-small.jpg);
+
+            @include respond(res-bg) {
+                background-image: url(/img/desserts-menu.jpg);
+            }
         }
 
         &--5 {
-            background-image: url(/img/barbecue.jpg);
+            background-image: url(/img/barbecue-small.jpg);
+
+            @include respond(res-bg) {
+                background-image: url(/img/barbecue.jpg);
+            }
         }
 
         &--6 {
