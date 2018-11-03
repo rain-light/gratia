@@ -56,10 +56,42 @@
     </section>
     <main class="book">
         <div class="book__form">
-            Bisogna approcciarsi con un certo studio e organizzazione.
-            Se perdi troppo tempo puoi tranquillamente scroccare form simili agli altri su internet, e capire
-            come la gente styla solitamente questa roba, magari form group moderni dipende le parole chiave che
-            scegli. Fatto sta che non si può andare alla cazzo per fare un modulo del genere.
+            <div class="book__date-group">
+                <div class="book__date-input">
+                    <input type="number" class="book__input book__input--center" placeholder="DD" min="1" max="31">
+                </div>
+                <div class="book__date-input">
+                    <input type="number" class="book__input book__input--center" placeholder="MM" min="1" max="12">
+                </div>
+                <div class="book__date-input">
+                    <input type="number" class="book__input book__input--center" placeholder="YY" min="2018">
+                </div>
+            </div>
+            <div class="book__hour-people-group">
+                <div class="book__hour-people-input">
+                    <input type="text" class="book__input book__input--center" placeholder="Hour">
+                </div>
+                <div class="book__hour-people-input">
+                    <input type="number" class="book__input book__input--center" placeholder="Number of people" min="1">
+                </div>
+            </div>
+            <div class="book__name-input">
+                <input type="text" class="book__input" placeholder="First and Last Name">
+            </div>
+            <div class="book__phone-input">
+                <input type="tel" class="book__input" placeholder="Phone Number">
+            </div>
+            <div class="book__mail-input">
+                <input type="email" class="book__input" placeholder="E-Mail" required>
+            </div>
+            <div class="book__food-input">
+                Prepare Menu
+                <span class="book__food-input-icon"></span>
+            </div>
+            <div class="book__textarea-box">
+                <textarea class="book__textarea" placeholder="Your message..."></textarea>
+            </div>
+            <button class="book__send-btn">Send</button>
         </div>
     </main>
     <footer class="footer">

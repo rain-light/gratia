@@ -1556,7 +1556,126 @@ input[type="number"] {
 }
 
 .book__form {
-  background-color: cyan;
   width: 100rem;
+  max-width: 90vw;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-column-gap: 2rem;
+  grid-auto-rows: minmax(5rem, -webkit-max-content);
+  grid-auto-rows: minmax(5rem, max-content);
+  grid-row-gap: 3rem;
+}
+
+.book__form > * {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 3rem;
+}
+
+.book__date-group {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.book__hour-people-group {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.book__textarea-box {
+  grid-column: 1 / -1;
+}
+
+.book__textarea {
+  resize: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  height: 15rem;
+}
+
+.book__send-btn {
+  grid-column: 1 / -1;
+  background-color: #D89B64;
+  padding: 1.5rem;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  font-family: inherit;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  cursor: pointer;
+  -webkit-transition: background-color .2s;
+  transition: background-color .2s;
+}
+
+.book__send-btn:hover {
+  background-color: #dda878;
+}
+
+.book__send-btn:active {
+  background-color: #d38e50;
+}
+
+.book__input {
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #151B28;
+}
+
+.book__input--center {
+  text-align: center;
+}
+
+.book__food-input {
+  width: 100%;
+  height: 100%;
+  background-color: #151B28;
+  text-transform: uppercase;
+  color: #D89B64;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.book__food-input-icon {
+  width: 1rem;
+  height: 2px;
+  background-color: #fff;
+}
+
+.book__food-input-icon::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.book input,
+.book textarea, .book__food-input {
+  border: none;
+  -webkit-box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5rem rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+.book input {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
