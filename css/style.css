@@ -283,11 +283,13 @@ body {
 .btn:visited {
   display: inline-block;
   text-decoration: none;
+  text-align: center;
   text-transform: uppercase;
   color: #D89B64;
+  min-width: 20rem;
   font-size: 1.4rem;
   border: 1px solid #263045;
-  padding: 1.8rem 4.5rem;
+  padding: 8% 10%;
 }
 
 .btn--light,
@@ -299,7 +301,7 @@ body {
 .button-underline,
 .button-underline:link,
 .button-underline:visited {
-  display: block;
+  display: inline-block;
   min-width: 20rem;
   text-align: center;
   text-decoration: none;
@@ -1191,7 +1193,7 @@ input[type="number"] {
 
 @media only screen and (max-width: 25em) {
   .header__navigation {
-    padding: 0 .3rem;
+    display: none;
   }
 }
 
