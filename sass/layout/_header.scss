@@ -46,7 +46,7 @@
             top: 40%;
         }
 
-        @media only screen and (max-width: 25em) {
+        @include respond(phone) {
             display: none;
         }
     }
