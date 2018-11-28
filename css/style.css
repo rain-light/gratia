@@ -1170,6 +1170,8 @@ input[type="number"] {
   /* Responsive images loader */
   /* SPECIAL MEDIA QUERIES */
   /* Responsive images loader */
+  /* SPECIAL MEDIA QUERIES */
+  /* Responsive images loader */
 }
 
 @media only screen and (max-width: 75em) {
@@ -1191,7 +1193,7 @@ input[type="number"] {
   }
 }
 
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 37.5em) {
   .header__navigation {
     display: none;
   }
